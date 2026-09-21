@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DueHawk</title>
+  <style>
+    :root {
+      --brand:       #0061A4;
+      --brand-dark:  #004A7F;
+      --brand-light: #E8F1FC;
+      --text:        #212121;
+      --muted:       #616161;
+      --border:      #E0E0E0;
+      --bg:          #FAFAFA;
+      --white:       #FFFFFF;
+      --radius:      10px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ─────────────────────────────────────────── */
+    header {
+      background: var(--brand);
+      color: var(--white);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: clamp(26px, 5vw, 36px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.85;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Meta bar ───────────────────────────────────────── */
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      align-items: center;
+      background: var(--brand-light);
+      border: 1px solid #B9D3F2;
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: var(--brand-dark);
+    }
+
+    .meta span { display: flex; align-items: center; gap: 6px; }
+    .meta strong { font-weight: 600; }
+
+    /* ── Sections ───────────────────────────────────────── */
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--brand-light);
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    ul:last-child, ol:last-child { margin-bottom: 0; }
+
+    li { margin-bottom: 8px; }
+    li:last-child { margin-bottom: 0; }
+
+    /* ── Callout boxes ──────────────────────────────────── */
+    .callout {
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .callout .callout-icon { flex-shrink: 0; font-size: 18px; line-height: 1.5; }
+
+    .callout-green  { background: #E8F5E9; border-left: 4px solid #43A047; color: #1B5E20; }
+    .callout-blue   { background: #E3F2FD; border-left: 4px solid #1E88E5; color: #0D47A1; }
+    .callout-amber  { background: #FFF8E1; border-left: 4px solid #FFB300; color: #4E342E; }
+
+    /* ── Table ──────────────────────────────────────────── */
+    .table-wrap { overflow-x: auto; margin: 16px 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead th {
+      background: var(--brand);
+      color: var(--white);
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+    thead th:first-child { border-radius: 6px 0 0 0; }
+    thead th:last-child  { border-radius: 0 6px 0 0; }
+
+    tbody tr:nth-child(even) { background: var(--brand-light); }
+    tbody td { padding: 10px 14px; vertical-align: top; border-bottom: 1px solid var(--border); }
+
+    /* ── Links ──────────────────────────────────────────── */
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--brand-dark); }
+
+    /* ── Contact card ───────────────────────────────────── */
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--brand-light);
+      border: 1px solid #B9D3F2;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-top: 16px;
+    }
+    .contact-card .contact-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .contact-card p { margin: 0; font-size: 15px; }
+    .contact-card strong { display: block; color: var(--brand-dark); margin-bottom: 2px; }
+
+    /* ── Footer ─────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--brand); }
+
+    /* ── Responsive ─────────────────────────────────────── */
+    @media (max-width: 520px) {
+      section { padding: 24px 20px; }
+      header  { padding: 36px 20px 32px; }
+      main    { padding: 32px 16px 64px; }
+    }
+  </style>
+  <style>code { background: var(--brand-light); padding: 1px 6px; border-radius: 4px; font-size: 14px; }</style>
+</head>
+<body>
+
+<header>
+  <p class="app-name">NaRiSystems · DueHawk</p>
+  <h1>Privacy Policy</h1>
+  <p>Your passports, licences and policies are yours alone. Here's exactly what DueHawk stores, where, and what never leaves your phone.</p>
+</header>
+
+<main>
+
+  <div class="meta">
+    <span>📅 <strong>Last updated:</strong> September 21, 2026</span>
+    <span>📱 <strong>App:</strong> DueHawk — Renewal &amp; Document Expiry Tracker</span>
+    <span>🏢 <strong>Developer:</strong> NaRiSystems</span>
+  </div>
+
+  <!-- 1. Overview ─────────────────────────────────────────── -->
+  <section id="overview">
+    <h2><span class="icon">👁</span> Overview</h2>
+
+    <p>
+      DueHawk is a local-first tracker for things that expire: insurance policies,
+      passports, licences, vehicle registrations, warranties and memberships. It
+      does not require an account with NaRiSystems, and NaRiSystems runs no
+      servers that receive your records.
+    </p>
+
+    <div class="callout callout-green">
+      <span class="callout-icon">✅</span>
+      <span>
+        <strong>Bottom line:</strong> NaRiSystems does not collect, store, or sell
+        your items, notes, dates or attached documents. They stay on your device,
+        plus your own Google Drive if you turn on backup.
+      </span>
+    </div>
+
+    <p>
+      This policy covers the only cases where anything leaves your device:
+      the optional Google Drive backup (Premium), anonymous crash reports, and
+      purchases handled by Google Play. DueHawk contains no advertising and no
+      usage analytics.
+    </p>
+  </section>
+
+  <!-- 2. Data summary ─────────────────────────────────────── -->
+  <section id="data-collected">
+    <h2><span class="icon">📊</span> Data We Collect</h2>
+
+    <p>Every category of data involved when you use DueHawk:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Collected by NaRiSystems?</th>
+            <th>Where it goes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Items, categories, expiry dates, reminders &amp; notes</td>
+            <td>No</td>
+            <td>Your device only</td>
+          </tr>
+          <tr>
+            <td>Attached photos and PDFs</td>
+            <td>No</td>
+            <td>Your device only (app-private storage)</td>
+          </tr>
+          <tr>
+            <td>App-lock PIN</td>
+            <td>No</td>
+            <td>Stored only as a one-way hash in your device's secure storage</td>
+          </tr>
+          <tr>
+            <td>Fingerprint / face data</td>
+            <td>No — never</td>
+            <td>Handled entirely by Android; DueHawk never receives it</td>
+          </tr>
+          <tr>
+            <td>Google Drive backups <em>(Premium, optional)</em></td>
+            <td>No</td>
+            <td>Your own Google Drive — see §4</td>
+          </tr>
+          <tr>
+            <td>Crash &amp; diagnostic reports</td>
+            <td>Anonymised only</td>
+            <td>Sentry (crash monitoring) — see §6</td>
+          </tr>
+          <tr>
+            <td>Purchase / payment details</td>
+            <td>No</td>
+            <td>Google Play — see §5</td>
+          </tr>
+          <tr>
+            <td>Name, email, contacts, location, advertising ID</td>
+            <td>No — never</td>
+            <td>Not collected</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3. Local storage & permissions ──────────────────────── -->
+  <section id="local-storage">
+    <h2><span class="icon">📱</span> Local Storage &amp; Permissions</h2>
+
+    <p>
+      Your items, reminders, settings and attachments are stored in DueHawk's
+      private storage on your device, which other apps cannot read. Android's
+      own automatic cloud backup is switched off for DueHawk, so this data is
+      not copied anywhere unless you turn on DueHawk's Google Drive backup.
+    </p>
+
+    <p>DueHawk asks for these permissions, each used only for the purpose shown:</p>
+
+    <ul>
+      <li><strong>Camera</strong> — to photograph a document you want to attach. Photos are saved inside the app, not to your gallery.</li>
+      <li><strong>Notifications</strong> and <strong>alarms &amp; reminders</strong> — to remind you before something expires, at the time you chose.</li>
+      <li><strong>Run at startup</strong> — to restore your scheduled reminders after the phone restarts.</li>
+      <li><strong>Biometrics</strong> — to unlock the app with your fingerprint or face if you enable app lock. The check happens inside Android; DueHawk only learns whether it succeeded.</li>
+      <li><strong>Internet</strong> — only for Google Drive backup, Google Play purchases, and crash reports.</li>
+    </ul>
+
+    <p>
+      When you pick a photo or PDF from your files, DueHawk copies only that
+      file into its private storage. It does not scan or read anything else on
+      your device.
+    </p>
+  </section>
+
+  <!-- 4. Google Drive backup ──────────────────────────────── -->
+  <section id="drive-backup">
+    <h2><span class="icon">☁️</span> Optional Google Drive Backup</h2>
+
+    <p>
+      Premium users can back up to their own Google Drive. Backup is off until
+      you sign in with Google and turn it on.
+    </p>
+
+    <ul>
+      <li>
+        DueHawk requests only the <code>drive.appdata</code> permission. This
+        gives it access to a hidden folder reserved for DueHawk in your Drive,
+        and <strong>not</strong> to any of your other Drive files.
+      </li>
+      <li>A backup contains your items, categories, settings and attached files.</li>
+      <li>DueHawk keeps your 5 most recent backups and automatically deletes older ones.</li>
+      <li>
+        Backups are protected by your Google account's security. DueHawk does
+        not add its own encryption to them, so keep your Google account secure.
+      </li>
+      <li>NaRiSystems cannot see, access or recover your backups.</li>
+    </ul>
+
+    <div class="callout callout-blue">
+      <span class="callout-icon">ℹ️</span>
+      <span>
+        To delete your backups, open Google Drive on the web → Settings →
+        <strong>Manage apps</strong> → DueHawk → <strong>Delete hidden app data</strong>.
+        You can also disconnect DueHawk from your Google account at
+        myaccount.google.com → Security → Third-party apps.
+      </span>
+    </div>
+  </section>
+
+  <!-- 5. Purchases ────────────────────────────────────────── -->
+  <section id="purchases">
+    <h2><span class="icon">💳</span> Purchases</h2>
+
+    <p>
+      DueHawk Premium is a one-time purchase processed entirely by Google Play.
+      NaRiSystems never receives your card or payment details. The app only asks
+      Google Play whether your account owns Premium, so it can unlock features
+      and restore your purchase after a reinstall. Google's handling of payment
+      data is covered by the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+    </p>
+  </section>
+
+  <!-- 6. Crash reporting & ads ───────────────────────────── -->
+  <section id="crash-reporting">
+    <h2><span class="icon">📈</span> Crash Reporting, Analytics &amp; Advertising</h2>
+
+    <p>
+      DueHawk uses <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a>
+      to receive a report when the app crashes or hits an error, so we can fix it.
+      A report contains technical details only: the error and where in the code it
+      happened, the app version, device model and Android version.
+    </p>
+
+    <ul>
+      <li>DueHawk never adds your item names, notes, dates or attachments to a report.</li>
+      <li>No screenshots, screen recordings, or record of what you tap.</li>
+      <li>No name, email, account or other personal identifiers are attached.</li>
+      <li>Sentry processes reports on our behalf and does not use them for anything else.</li>
+    </ul>
+
+    <p>
+      DueHawk contains <strong>no advertising</strong> and <strong>no usage
+      analytics</strong>. We don't track how you use the app.
+    </p>
+
+    <p>
+      DueHawk may show a small card recommending another NaRiSystems app. It is
+      a plain link to Google Play; nothing about you is sent when it's shown or
+      tapped.
+    </p>
+  </section>
+
+  <!-- 7. Children ─────────────────────────────────────────── -->
+  <section id="childrens-privacy">
+    <h2><span class="icon">🧒</span> Children's Privacy</h2>
+
+    <p>
+      DueHawk is not directed at children under 13, and we do not knowingly
+      collect personal information from anyone, including children. If you
+      believe a child has sent us information, contact
+      <a href="mailto:narisystems@gmail.com">narisystems@gmail.com</a> and we
+      will delete it.
+    </p>
+  </section>
+
+  <!-- 8. Rights ───────────────────────────────────────────── -->
+  <section id="your-rights">
+    <h2><span class="icon">⚖️</span> Your Rights &amp; Choices</h2>
+
+    <ul>
+      <li><strong>Delete everything on your device:</strong> uninstall DueHawk, or clear its storage in Android Settings → Apps → DueHawk.</li>
+      <li><strong>Delete your backups:</strong> see the steps in §4.</li>
+      <li><strong>Stop backups:</strong> turn off Google Drive backup in DueHawk's Settings.</li>
+      <li><strong>Crash reports:</strong> these contain no personal data, so there is nothing to identify you by. If you have a question about them, email us.</li>
+    </ul>
+
+    <p>
+      Because NaRiSystems holds no personal data about you, there is nothing
+      for us to export or delete on our side. Your data is under your control
+      on your device and in your Google account.
+    </p>
+  </section>
+
+  <!-- 9. Changes ──────────────────────────────────────────── -->
+  <section id="changes">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+
+    <p>
+      If DueHawk starts handling data differently, we'll update this page and
+      the "Last updated" date before the change ships. Significant changes will
+      also be noted in the app's release notes on Google Play.
+    </p>
+  </section>
+
+  <!-- 10. Contact ─────────────────────────────────────────── -->
+  <section id="contact">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+
+    <p>Questions about this policy or your data:</p>
+
+    <div class="contact-card">
+      <span class="contact-icon">📧</span>
+      <p>
+        <strong>NaRiSystems</strong>
+        <a href="mailto:narisystems@gmail.com">narisystems@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © 2026 NaRiSystems. All rights reserved. &nbsp;·&nbsp;
+    <a href="https://narisystems.github.io/duehawk/">DueHawk Home</a> &nbsp;·&nbsp;
+    <a href="https://play.google.com/store/apps/details?id=com.duehawk.app">Google Play</a>
+  </p>
+  <p style="margin-top:6px;">
+    Privacy Policy last updated September 21, 2026
+  </p>
+</footer>
+
+</body>
+</html>
