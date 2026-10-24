@@ -221,7 +221,7 @@
 <main>
 
   <div class="meta">
-    <span>📅 <strong>Last updated:</strong> September 28, 2026</span>
+    <span>📅 <strong>Last updated:</strong> October 24, 2026</span>
     <span>📱 <strong>App:</strong> DueHawk — Renewal &amp; Document Expiry Tracker</span>
     <span>🏢 <strong>Developer:</strong> NaRiSystems</span>
   </div>
@@ -330,7 +330,7 @@
 
     <ul>
       <li><strong>Camera</strong> — to photograph a document you want to attach. Photos are saved inside the app, not to your gallery.</li>
-      <li><strong>Notifications</strong> and <strong>alarms &amp; reminders</strong> — to remind you before something expires, at the time you chose.</li>
+      <li><strong>Notifications</strong> and <strong>alarms &amp; reminders</strong> — to remind you before something expires, at 9am on the days you chose.</li>
       <li><strong>Run at startup</strong> — to restore your scheduled reminders after the phone restarts.</li>
       <li><strong>Biometrics</strong> — to unlock the app with your fingerprint or face if you enable app lock. The check happens inside Android; DueHawk only learns whether it succeeded.</li>
       <li><strong>Internet</strong> — only for Google Drive backup, Google Play purchases, and crash reports.</li>
@@ -339,7 +339,8 @@
     <p>
       When you pick a photo or PDF from your files, DueHawk copies only that
       file into its private storage. It does not scan or read anything else on
-      your device.
+      your device. When you open an attached PDF, Android hands that one file to
+      the PDF viewer app you choose.
     </p>
   </section>
 
@@ -348,8 +349,9 @@
     <h2><span class="icon">☁️</span> Optional Google Drive Backup</h2>
 
     <p>
-      Premium users can back up to their own Google Drive. Backup is off until
-      you sign in with Google and turn it on.
+      Premium users can back up to their own Google Drive. Nothing is backed up
+      automatically: a backup only happens when you tap <strong>Backup to Google
+      Drive</strong> in Settings, after signing in with Google.
     </p>
 
     <ul>
@@ -359,6 +361,8 @@
         and <strong>not</strong> to any of your other Drive files.
       </li>
       <li>A backup contains your items, categories, settings and attached files.</li>
+      <li>To show which Google account a backup goes to, DueHawk displays that
+        account's email address on your phone. It is never sent to NaRiSystems.</li>
       <li>DueHawk keeps your 5 most recent backups and automatically deletes older ones.</li>
       <li>
         Backups are protected by your Google account's security. DueHawk does
@@ -400,7 +404,8 @@
       DueHawk uses <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a>
       to receive a report when the app crashes or hits an error, so we can fix it.
       A report contains technical details only: the error and where in the code it
-      happened, the app version, device model and Android version.
+      happened, the app version, and device details such as the model, Android
+      version, language, time zone, memory and connection type.
     </p>
 
     <ul>
@@ -430,7 +435,7 @@
     <h2><span class="icon">🧒</span> Children's Privacy</h2>
 
     <p>
-      DueHawk is not directed at children under 13, and we do not knowingly
+      DueHawk is intended for adults and is not directed at children. We do not knowingly
       collect personal information from anyone, including children. If you
       believe a child has sent us information, contact
       <a href="mailto:narisystems@gmail.com">narisystems@gmail.com</a> and we
@@ -445,7 +450,7 @@
     <ul>
       <li><strong>Delete everything on your device:</strong> uninstall DueHawk, or clear its storage in Android Settings → Apps → DueHawk.</li>
       <li><strong>Delete your backups:</strong> see the steps in §4.</li>
-      <li><strong>Stop backups:</strong> turn off Google Drive backup in DueHawk's Settings.</li>
+      <li><strong>Stop backups:</strong> DueHawk never backs up on its own, so simply stop tapping Backup. To remove its access entirely, disconnect it from your Google account (see §4).</li>
       <li><strong>Crash reports:</strong> these contain no personal data, so there is nothing to identify you by. They are deleted automatically after at most 90 days. If you have a question about them, email us.</li>
     </ul>
 
@@ -491,7 +496,7 @@
     <a href="https://play.google.com/store/apps/details?id=com.duehawk.app">Google Play</a>
   </p>
   <p style="margin-top:6px;">
-    Privacy Policy last updated September 28, 2026
+    Privacy Policy last updated October 24, 2026
   </p>
 </footer>
 
